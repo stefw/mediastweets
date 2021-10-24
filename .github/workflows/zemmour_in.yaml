@@ -6,7 +6,7 @@ on:
     - cron:  '*/3 * * * *'
 
 jobs:
-  scrape_datagouvfr:
+  scrape_cnews:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,12 +17,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install minet==0.52.6
-      - name: scrape @deliveroo_FR tweets
+      - name: scrape @cnews tweets
         shell: bash
         run: |
-          #minet tw scrape tweets "from:@deliveroo_FR" --limit 10000 > deliveroo_FR-tweets.csv
-          minet tw scrape tweets "deliveroo_fr" --limit 10000 > deliveroo_FR-tweets.csv
+          minet tw scrape tweets "from:@CNEWS" --limit 10000 > cnews-tweets.csv
+          #minet tw scrape tweets "deliveroo_fr" --limit 10000 > deliveroo_FR-tweets.csv
       - name: commit
         uses: ./.github/actions/commit
         with:
-          message: 🐦 @deliveroo_FR
+          message: lol @cnews
