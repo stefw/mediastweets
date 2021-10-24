@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           minet tw scrape tweets "from:@CNEWS" --limit 10000 > cnews-tweets.csv
-          #minet tw scrape tweets "deliveroo_fr" --limit 10000 > deliveroo_FR-tweets.csv
+          #minet tw scrape tweets "cnews" --limit 10000 > cnews-tweets.csv
       - name: commit
         uses: ./.github/actions/commit
         with:
