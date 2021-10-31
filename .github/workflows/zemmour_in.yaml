@@ -40,7 +40,7 @@ jobs:
       - name: scrape @BFMTV tweets
         shell: bash
         run: |
-          minet tw scrape tweets "from:@BFMTV" --limit 10000 > bfmtv-tweets.csv
+          minet tw scrape tweets "from:@BFMTV" --limit 30000 > bfmtv-tweets.csv
           #minet tw scrape tweets "cnews" --limit 10000 > bfmtv-tweets.csv
       - name: commit
         uses: ./.github/actions/commit
