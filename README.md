@@ -1,4 +1,4 @@
-# mediastweets 
+# mediastweets
 
 Exemples d'usage
 
@@ -9,4 +9,4 @@ NoteBook sur ObservableHQ
 [BFMTV tweets des candidats à la présidentielle 2022](https://observablehq.com/@stefw/bfmtv-tweets-presidentielles?collection=@stefw/twitter)
 
 
-
+[Eric Zemmour Tweets - NLP, Viz & plus](https://observablehq.com/@stefw/eric-zemmour-tweets-nlp-viz-more-wip)
