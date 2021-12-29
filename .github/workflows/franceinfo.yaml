@@ -1,4 +1,4 @@
-name: scrape tweets
+name: scrape franceinfo
 
 on:
   workflow_dispatch:
