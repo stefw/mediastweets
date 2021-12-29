@@ -1,4 +1,4 @@
-name: scrape tweets
+name: scrape mediapart
 
 on:
   workflow_dispatch:
