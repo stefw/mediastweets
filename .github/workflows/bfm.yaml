@@ -1,4 +1,4 @@
-name: scrape tweets
+name: scrape bfm
 
 on:
   workflow_dispatch:
