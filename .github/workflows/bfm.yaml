@@ -16,7 +16,8 @@ jobs:
       - name: install minet
         run: |
           python -m pip install --upgrade pip
-          pip install minet==0.56.2
+          #pip install minet==0.56.2
+          pip install git+https://github.com/paulgirard/minet.git@acquire_guest_token_by_api
       - name: scrape @BFMTV tweets
         shell: bash
         run: |
